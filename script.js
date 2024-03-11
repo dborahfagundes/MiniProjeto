@@ -114,7 +114,7 @@ const editDelete = (event) => {
             editClient(index)
         } else {
             const client = readClient()[index]
-            const response = confirm(`Deseja realmente excluir o cliente ${client.nome}`)
+            const response = confirm(`Deseja realmente excluir o pet ${client.nome}`)
             if (response) {
                 deleteClient(index)
                 updateTable()
